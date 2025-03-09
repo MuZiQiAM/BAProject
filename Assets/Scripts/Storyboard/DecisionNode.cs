@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using XNode;
-
+[NodeWidth(450)]
 public class DecisionNode : BaseNode {
 	
-	[Input] public int entry;
-	[Output(dynamicPortList: true)]public List<BaseNode> exit;
-	
-	// Return the correct value of an output port when requested
+	[HideInInspector][Input] public int entry;
+	[HideInInspector][Output(dynamicPortList: true)]public List<BaseNode> exit;
+
+
 	public override object GetValue(NodePort port) {
 		return "Decisions"; // Replace this
 	}

@@ -28,11 +28,13 @@ public static class StoryboardManagerEditor
         }
 
         if (currentStoryboard == newStoryboard) return; // Avoid unnecessary updates
-
+    
+        
         currentStoryboard = newStoryboard;
         storyboardUI.sprite = newStoryboard;
         storyboardUI.enabled = newStoryboard != null; // Hide UI if no sprite
         SceneView.RepaintAll(); // Refresh scene view
+        
     }
 
     private static void UpdateStoryboardUI()

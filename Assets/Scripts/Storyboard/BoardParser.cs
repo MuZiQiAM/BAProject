@@ -6,27 +6,26 @@ using UnityEngine.UI;
 [ExecuteInEditMode]
 public class BoardParser : MonoBehaviour
 {
-    
-    [SerializeField]
-    private StoryboardGraph _storyboardGraph;
+    /*
+    [SerializeField] private StoryboardGraph _storyboardGraph;
 
     public Camera selectedCamera;
 
     public static int currentId;
-    
+
     public List<BaseNode> cameraTransitionList;
 
-   
+
     private void Start()
     {
         cameraTransitionList.Clear();
-        ParseNode(GetFirstNodeOf(typeof(StartStoryNode)));
+        ParseNode(GetFirstNodeOf(typeof(StartStoryNode1)));
         foreach (var VARIABLE in cameraTransitionList)
         {
             Debug.Log(VARIABLE.name + " " + VARIABLE.id);
         }
     }
-    
+
     public BaseNode GetFirstNodeOf(Type type)
     {
         foreach (var node1 in _storyboardGraph.nodes)
@@ -49,7 +48,7 @@ public class BoardParser : MonoBehaviour
         {
             ParseNode(VARIABLE);
         }
-        
+
         Debug.Log(node.name);
     }
 
@@ -65,17 +64,19 @@ public class BoardParser : MonoBehaviour
         switch (node.GetNodeType())
         {
             case NodeTypes.START_NODE:
-                selectedCamera = ((StartStoryNode)node).selectedCamera;
+                selectedCamera = ((StartStoryNode1)node).selectedCamera;
                 break;
-            case NodeTypes.BOARD_NODE :
-                ((BoardNode)node).selectedCamera = selectedCamera;
+            case NodeTypes.BOARD_NODE:
+                //((BoardNode)node).selectedCamera = selectedCamera;
                 break;
             case NodeTypes.END_NODE:
                 return;
             case NodeTypes.DECISION_NODE:
+                //((DecisionNode)node).selectedCamera = selectedCamera;
                 ParseDecisionNode((DecisionNode)node);
                 break;
-            default: Debug.LogError("NO NODE ASSIGNED");
+            default:
+                Debug.LogError("NO NODE ASSIGNED");
                 break;
         }
 
@@ -90,9 +91,12 @@ public class BoardParser : MonoBehaviour
                 node.id = cameraTransitionList.Count;
                 cameraTransitionList.Add(node);
             }
-            ParseNode(node.GetNextNode());
+
+            if (node.GetNextNode() != null)
+            {
+                ParseNode(node.GetNextNode());
+            }
         }
     }
-    
-    
+    */
 }

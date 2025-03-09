@@ -8,9 +8,11 @@ using XNode;
 
 public class BaseNode : Node
 {
+    [HideInInspector] public int id;
+    [HideInInspector] public Sprite storyboard;
+    [HideInInspector] public GizmoObject gizmoReference;
+    [HideInInspector] public Camera selectedCamera;
 
-    public int id;
-    
     public virtual string GetString()
     {
         return null;
@@ -20,7 +22,8 @@ public class BaseNode : Node
     {
         return null;
     }
-    
+
+
     public BaseNode GetNextNode()
     {
         NodePort exitPort = GetOutputPort("exit");
@@ -28,11 +31,12 @@ public class BaseNode : Node
 
         return exitPort.GetConnection(0).node as BaseNode;
     }
+
     public List<T> GetAllConnectedNodes<T>(string basePortName) where T : Node
     {
         var connectedNodes = new List<T>();
         foreach (var port in Ports)
-            if (port.fieldName.StartsWith(basePortName) )
+            if (port.fieldName.StartsWith(basePortName))
                 if (port.IsConnected)
                     foreach (var connection in port.GetConnections())
                     {
@@ -42,6 +46,7 @@ public class BaseNode : Node
 
         return connectedNodes;
     }
+
     public T GetConnectedNode<T>(string fieldName) where T : Node
     {
         var port = GetInputPort(fieldName);
@@ -55,10 +60,5 @@ public class BaseNode : Node
     public virtual NodeTypes GetNodeType()
     {
         return NodeTypes.WRONG_NODE;
-    }
-
-    public virtual Image GetImage()
-    {
-        return null;
     }
 }

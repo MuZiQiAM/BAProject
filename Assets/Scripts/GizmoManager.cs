@@ -8,21 +8,21 @@ public class GizmoManager : MonoBehaviour
 {
     public static GizmoManager Instance;
 
-    private Dictionary<BoardNode, GizmoObject> nodeToGizmoMap = new Dictionary<BoardNode, GizmoObject>();
+    private Dictionary<BoardNodeOld, GizmoObject> nodeToGizmoMap = new Dictionary<BoardNodeOld, GizmoObject>();
 
  
     
-    public void Register(BoardNode node, GizmoObject gizmo)
+    public void Register(BoardNodeOld nodeOld, GizmoObject gizmo)
     {
-        if (!nodeToGizmoMap.ContainsKey(node))
+        if (!nodeToGizmoMap.ContainsKey(nodeOld))
         {
-            nodeToGizmoMap[node] = gizmo;
+            nodeToGizmoMap[nodeOld] = gizmo;
         }
     }
     
-    public GizmoObject GetGizmo(BoardNode node)
+    public GizmoObject GetGizmo(BoardNodeOld nodeOld)
     {
-        if (nodeToGizmoMap.TryGetValue(node, out var gizmo))
+        if (nodeToGizmoMap.TryGetValue(nodeOld, out var gizmo))
         {
             return gizmo;
         }
