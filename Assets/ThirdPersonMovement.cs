@@ -3,15 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-    public CharacterController Controller;
-    public Transform camera;
-
-    public float gravity = -9.81f;
-    public float groundCheckDistance = 0.4f;
-    public LayerMask groundMask;
+    public CharacterController controller;
+    public new Transform camera;
 
     public float speed = 6f;
 
@@ -21,6 +18,11 @@ public class ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
 
+    public GameObject player;
+
+    private float horizontal;
+    private float vertical;
+
     // Update is called once per frame
 
     private void Start()
@@ -28,15 +30,13 @@ public class ThirdPersonMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
     }
-
+    
     void Update()
     {
-        
-        
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-        
+
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + camera.eulerAngles.y;
@@ -46,10 +46,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
             //Controller.Move(direction * speed * Time.deltaTime);
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            Controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
         
-        //velocity.y += gravity * Time.deltaTime;
-        //Controller.Move(velocity * Time.deltaTime);
     }
 }

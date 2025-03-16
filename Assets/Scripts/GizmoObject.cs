@@ -13,7 +13,15 @@ public class GizmoObject : MonoBehaviour
     public string gizmoName;
     public StoryNode linkedNode;
     
-   /* private void OnDrawGizmos()
+    private void Start()
+    {
+        if (Application.isPlaying) 
+        {
+            this.gameObject.SetActive(false); 
+        }
+    }
+    
+    private void OnDrawGizmos()
     {
         if (linkedNode == null) return; // Now this should never be null!
 
@@ -26,7 +34,11 @@ public class GizmoObject : MonoBehaviour
                 DrawConnectionLine(node.Gizmo);
             }
         }
-    }*/
+    }
+    public void SetVisibility(bool isVisible)
+    {
+        this.gameObject.SetActive(isVisible);
+    }
     public void DrawConnectionLine(GizmoObject targetGizmo)
     {
         if (targetGizmo == null) return;

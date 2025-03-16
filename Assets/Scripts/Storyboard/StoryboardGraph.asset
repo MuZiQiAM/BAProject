@@ -1,6 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7602515682339318581
+--- !u!114 &-8624428448437855683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42e925b0a1d4145b5aaa75f0a21255b, type: 3}
+  m_Name: End Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 3320, y: -1928}
+  ports:
+    keys:
+    - Entry
+    values:
+    - _fieldName: Entry
+      _node: {fileID: -8624428448437855683}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: 6794489018411129300}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: ccec1c70564452e4592e67b5a00d286a, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 14
+--- !u!114 &-8563155556641207245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,36 +46,132 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1464, y: -616}
+  position: {x: 2456, y: -1944}
   ports:
     keys:
     - Exit
     - Entry
     values:
     - _fieldName: Exit
-      _node: {fileID: -7602515682339318581}
+      _node: {fileID: -8563155556641207245}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Entry
-        node: {fileID: 2929780832817294622}
+        node: {fileID: 6794489018411129300}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Entry
-      _node: {fileID: -7602515682339318581}
+      _node: {fileID: -8563155556641207245}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: Exit
+        node: {fileID: 5187982816352551068}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 1c00a9f888ad2724bafb2663a9420290, type: 3}
-  Gizmo: {fileID: 2899732449663979746, guid: 43a0795d24b10e74398cc17511df420a, type: 3}
---- !u!114 &-7300627967995968895
+  Storyboard: {fileID: 21300000, guid: a5ddc389e7dae2143b7b14b6f8f29342, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 12
+--- !u!114 &-7221224491235613081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -568, y: 40}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: -7221224491235613081}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: -4544742637503069104}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: -7221224491235613081}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: -745877988876820768}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: 545ab79a159c67a45a72739128c7f202, type: 3}
+  Gizmo: {fileID: 4410029880317771988, guid: 4b69906dced34474187efe33ea2e0fa6, type: 3}
+  nodeName: 6
+--- !u!114 &-6316059530693839962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1080, y: -952}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: -6316059530693839962}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: 4245478646173691555}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: -6316059530693839962}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: 2346196282188057126}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: 5c98d87939a2de647959e3ed5cf2f037, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 3
+--- !u!114 &-4544742637503069104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,27 +184,29 @@ MonoBehaviour:
   m_Name: Decision Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -280, y: -280}
+  position: {x: -56, y: -456}
   ports:
     keys:
     - Entry
     - Exits
     - Exits 0
+    - Exits 1
+    - Exits 2
     values:
     - _fieldName: Entry
-      _node: {fileID: -7300627967995968895}
+      _node: {fileID: -4544742637503069104}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Exits 0
-        node: {fileID: 2216973773120111435}
+      - fieldName: Exit
+        node: {fileID: -7221224491235613081}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Exits
-      _node: {fileID: -7300627967995968895}
+      _node: {fileID: -4544742637503069104}
       _typeQualifiedName: System.Collections.Generic.List`1[[DefaultNamespace.Makeover.IStoryNode,
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -85,7 +216,31 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Exits 0
-      _node: {fileID: -7300627967995968895}
+      _node: {fileID: -4544742637503069104}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: 1136662169096316894}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Exits 1
+      _node: {fileID: -4544742637503069104}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: 1871828495985210811}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Exits 2
+      _node: {fileID: -4544742637503069104}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
@@ -93,8 +248,55 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 5666027389059714069, guid: d204caf8bbc441249b70108ed3208588, type: 3}
+  Storyboard: {fileID: 21300000, guid: 19c842982a6d81b4b98432b5a2437c06, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 7
+--- !u!114 &-745877988876820768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -584, y: -936}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: -745877988876820768}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: -7221224491235613081}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: -745877988876820768}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: 4245478646173691555}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: c2614f23d3d1c07459ec042321cbed10, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 5
 --- !u!114 &-701692732289557885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,48 +338,6 @@ MonoBehaviour:
   gizmoReference: {fileID: 0}
   selectedCamera: {fileID: 0}
   entry: 0
---- !u!114 &-381400010607442175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
-  m_Name: Board Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 951.39996, y: -520.2258}
-  ports:
-    keys:
-    - Exit
-    - Entry
-    values:
-    - _fieldName: Exit
-      _node: {fileID: -381400010607442175}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Entry
-      _node: {fileID: -381400010607442175}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Exit
-        node: {fileID: 261836541198999902}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 332791982019852483, guid: 5a5c858d10f58544184fe7ce2d9d4948, type: 3}
 --- !u!114 &-289823441866959909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +351,7 @@ MonoBehaviour:
   m_Name: Start Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2184, y: -232}
+  position: {x: -2248, y: -360}
   ports:
     keys:
     - Exit
@@ -202,15 +362,21 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Entry
-        node: {fileID: 2579755078135597320}
+        node: {fileID: 9172723752283657427}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 2899732449663979746, guid: 43a0795d24b10e74398cc17511df420a, type: 3}
+  Storyboard: {fileID: 21300000, guid: a49740d8bde39354297132fcc61b1947, type: 3}
+  Gizmo: {fileID: 1809670778650320600, guid: 7625dc46decaae14997355183915189b, type: 3}
+  nodeName: StartNode
   selectedCamera: {fileID: 0}
+  Players:
+  - {fileID: 2254492171085037215, guid: 7712c811baa92c24a9a2ca05a5b5c94c, type: 3}
+  endings:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,19 +390,23 @@ MonoBehaviour:
   m_Name: StoryboardGraph
   m_EditorClassIdentifier: 
   nodes:
+  - {fileID: 2726414755973665861}
   - {fileID: -289823441866959909}
-  - {fileID: 2579755078135597320}
-  - {fileID: 2216973773120111435}
-  - {fileID: -7300627967995968895}
-  - {fileID: 1451767458901153805}
-  - {fileID: -7602515682339318581}
-  - {fileID: 2929780832817294622}
-  - {fileID: 4738770098740613398}
-  - {fileID: 261836541198999902}
-  - {fileID: -381400010607442175}
-  startNode: {fileID: 0}
-  currentNode: {fileID: 0}
---- !u!114 &261836541198999902
+  - {fileID: 9172723752283657427}
+  - {fileID: 2346196282188057126}
+  - {fileID: -6316059530693839962}
+  - {fileID: 4245478646173691555}
+  - {fileID: -745877988876820768}
+  - {fileID: -7221224491235613081}
+  - {fileID: -4544742637503069104}
+  - {fileID: 1136662169096316894}
+  - {fileID: 1871828495985210811}
+  - {fileID: 1710316300663305724}
+  - {fileID: 5187982816352551068}
+  - {fileID: -8563155556641207245}
+  - {fileID: 6794489018411129300}
+  - {fileID: -8624428448437855683}
+--- !u!114 &1136662169096316894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,151 +419,40 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 367.69748, y: -567.3931}
+  position: {x: 1592, y: -1944}
   ports:
     keys:
     - Exit
     - Entry
     values:
     - _fieldName: Exit
-      _node: {fileID: 261836541198999902}
+      _node: {fileID: 1136662169096316894}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Entry
-        node: {fileID: -381400010607442175}
+        node: {fileID: 5187982816352551068}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Entry
-      _node: {fileID: 261836541198999902}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Exit
-        node: {fileID: 4738770098740613398}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 5666027389059714069, guid: d204caf8bbc441249b70108ed3208588, type: 3}
---- !u!114 &1451767458901153805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad606f58a8df47429d053a4d29f19881, type: 3}
-  m_Name: Decision Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -280, y: 264}
-  ports:
-    keys:
-    - Entry
-    - Exits
-    values:
-    - _fieldName: Entry
-      _node: {fileID: 1451767458901153805}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Exits 1
-        node: {fileID: 2216973773120111435}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Exits
-      _node: {fileID: 1451767458901153805}
-      _typeQualifiedName: System.Collections.Generic.List`1[[DefaultNamespace.Makeover.IStoryNode,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 332791982019852483, guid: 5a5c858d10f58544184fe7ce2d9d4948, type: 3}
---- !u!114 &2216973773120111435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad606f58a8df47429d053a4d29f19881, type: 3}
-  m_Name: Decision Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1017.8653, y: -55.55967}
-  ports:
-    keys:
-    - Entry
-    - Exits
-    - Exits 0
-    - Exits 1
-    values:
-    - _fieldName: Entry
-      _node: {fileID: 2216973773120111435}
+      _node: {fileID: 1136662169096316894}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Exits 0
-        node: {fileID: 2579755078135597320}
+        node: {fileID: -4544742637503069104}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Exits
-      _node: {fileID: 2216973773120111435}
-      _typeQualifiedName: System.Collections.Generic.List`1[[DefaultNamespace.Makeover.IStoryNode,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Exits 0
-      _node: {fileID: 2216973773120111435}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Entry
-        node: {fileID: -7300627967995968895}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: Exits 1
-      _node: {fileID: 2216973773120111435}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Entry
-        node: {fileID: 1451767458901153805}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 8340988761899110441, guid: e1dce2baa1a2fe34198a624f9e4a027f, type: 3}
---- !u!114 &2579755078135597320
+  Storyboard: {fileID: 21300000, guid: 8e4c96c5cb343db43a25795b4d62d90d, type: 3}
+  Gizmo: {fileID: 151177941920450763, guid: 9a5e6d711c2cb014dae528b5956f7cbd, type: 3}
+  nodeName: 10
+--- !u!114 &1710316300663305724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,54 +461,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad606f58a8df47429d053a4d29f19881, type: 3}
-  m_Name: Decision Story
+  m_Script: {fileID: 11500000, guid: a42e925b0a1d4145b5aaa75f0a21255b, type: 3}
+  m_Name: End Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1656, y: -104}
+  position: {x: 936, y: 24}
   ports:
     keys:
     - Entry
-    - Exits
-    - Exits 0
     values:
     - _fieldName: Entry
-      _node: {fileID: 2579755078135597320}
+      _node: {fileID: 1710316300663305724}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Exit
-        node: {fileID: -289823441866959909}
+        node: {fileID: 1871828495985210811}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Exits
-      _node: {fileID: 2579755078135597320}
-      _typeQualifiedName: System.Collections.Generic.List`1[[DefaultNamespace.Makeover.IStoryNode,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Exits 0
-      _node: {fileID: 2579755078135597320}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Entry
-        node: {fileID: 2216973773120111435}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 504015624682344906, guid: 801dfaf60b9d4d64b92908bb9b7c0820, type: 3}
---- !u!114 &2929780832817294622
+  Storyboard: {fileID: 21300000, guid: 18d4a67ef8ff38d46bf85a2d62257fb3, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: Enter Gizmo Number here
+--- !u!114 &1871828495985210811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -462,38 +498,105 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -891.8401, y: -468.86783}
+  position: {x: 488, y: 24}
   ports:
     keys:
     - Exit
     - Entry
     values:
     - _fieldName: Exit
-      _node: {fileID: 2929780832817294622}
+      _node: {fileID: 1871828495985210811}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Entry
-        node: {fileID: 4738770098740613398}
+        node: {fileID: 1710316300663305724}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Entry
-      _node: {fileID: 2929780832817294622}
+      _node: {fileID: 1871828495985210811}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Exit
-        node: {fileID: -7602515682339318581}
+      - fieldName: Exits 1
+        node: {fileID: -4544742637503069104}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 504015624682344906, guid: 801dfaf60b9d4d64b92908bb9b7c0820, type: 3}
+  Storyboard: {fileID: 21300000, guid: 568e4f29f80c4cc43bbd84182c7ea15c, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 8
+--- !u!114 &2346196282188057126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1576, y: 40}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: 2346196282188057126}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: -6316059530693839962}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: 2346196282188057126}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: 9172723752283657427}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: 85bdfa362b7bd1b4491910fac4933731, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 2
+--- !u!114 &2726414755973665861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4aeaf168274fa48a106cae19615732, type: 3}
+  m_Name: Node Group
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1672, y: -1176}
+  ports:
+    keys: []
+    values: []
+  width: 1565
+  height: 1796
+  groupType: 1
 --- !u!114 &3128783878294341515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +632,7 @@ MonoBehaviour:
   gizmoReference: {fileID: 0}
   selectedCamera: {fileID: 0}
   entry: 0
---- !u!114 &4738770098740613398
+--- !u!114 &4245478646173691555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -542,35 +645,174 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -213.02997, y: -577.6501}
+  position: {x: -1064, y: 40}
   ports:
     keys:
     - Exit
     - Entry
     values:
     - _fieldName: Exit
-      _node: {fileID: 4738770098740613398}
+      _node: {fileID: 4245478646173691555}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Entry
-        node: {fileID: 261836541198999902}
+        node: {fileID: -745877988876820768}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Entry
-      _node: {fileID: 4738770098740613398}
+      _node: {fileID: 4245478646173691555}
       _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Exit
-        node: {fileID: 2929780832817294622}
+        node: {fileID: -6316059530693839962}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 0}
-  Gizmo: {fileID: 8340988761899110441, guid: e1dce2baa1a2fe34198a624f9e4a027f, type: 3}
+  Storyboard: {fileID: 21300000, guid: 09482bf23b6ee5f48b3dc2289bf7c41c, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 4
+--- !u!114 &5187982816352551068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2024, y: -1944}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: 5187982816352551068}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: -8563155556641207245}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: 5187982816352551068}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: 1136662169096316894}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: 8945230306b54744e951ee76374068c6, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 11
+--- !u!114 &6794489018411129300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2888, y: -1944}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: 6794489018411129300}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: -8624428448437855683}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: 6794489018411129300}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: -8563155556641207245}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: eac2892048cda684b81180ff11cc2357, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 13
+--- !u!114 &9172723752283657427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c0242d4a65455ba4b75918e41108c9, type: 3}
+  m_Name: Board Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1592, y: -952}
+  ports:
+    keys:
+    - Exit
+    - Entry
+    values:
+    - _fieldName: Exit
+      _node: {fileID: 9172723752283657427}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Entry
+        node: {fileID: 2346196282188057126}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Entry
+      _node: {fileID: 9172723752283657427}
+      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Exit
+        node: {fileID: -289823441866959909}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Storyboard: {fileID: 21300000, guid: 9cc66c5d00ed57543a007f9134cd90dc, type: 3}
+  Gizmo: {fileID: 0}
+  nodeName: 1
