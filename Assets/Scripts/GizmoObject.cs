@@ -29,9 +29,9 @@ public class GizmoObject : MonoBehaviour
 
         foreach (var node in connectedNodes)
         {
-            if (node.Gizmo != null)
+            if (node.gizmo != null)
             {
-                DrawConnectionLine(node.Gizmo);
+                DrawConnectionLine(node.gizmo);
             }
         }
     }

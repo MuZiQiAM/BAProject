@@ -56,8 +56,8 @@ namespace DefaultNamespace.Makeover
         public static void DrawStoryboardFrame(StoryNode storyNode)
         {
             
-            Texture2D texture = storyNode.Storyboard.texture;
-            Rect spriteRect = storyNode.Storyboard.rect;
+            Texture2D texture = storyNode.storyboard.texture;
+            Rect spriteRect = storyNode.storyboard.rect;
             
             float spriteWidth = spriteRect.width;
             float spriteHeight = spriteRect.height;

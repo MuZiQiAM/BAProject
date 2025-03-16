@@ -2,36 +2,37 @@
 using System.Collections.Generic;
 using DefaultNamespace.Makeover;
 using UnityEngine;
+using UnityEngine.Serialization;
 using XNode;
 
 namespace Makeover
 {
     public abstract class StoryNode : Node, IStoryNode
     {
-        [HideInInspector] public Sprite Storyboard;
-        [HideInInspector] public GizmoObject Gizmo;
+        [FormerlySerializedAs("Storyboard")] [HideInInspector] public Sprite storyboard;
+        [FormerlySerializedAs("Gizmo")] [HideInInspector] public GizmoObject gizmo;
         [HideInInspector] public string nodeName = "Enter Gizmo Number here";
         
         
         public Vector3 Position()
         {
-            if (Gizmo is null)
+            if (gizmo is null)
             {
-                throw new Exception(nameof(Gizmo));
+                throw new Exception(nameof(gizmo));
             }
 
-            return Gizmo.transform.position;
+            return gizmo.transform.position;
         }
  
 
         public Quaternion Rotation()
         {
-            if (Gizmo is null)
+            if (gizmo is null)
             {
-                throw new Exception(nameof(Gizmo));
+                throw new Exception(nameof(gizmo));
             }
 
-            return Gizmo.transform.rotation;
+            return gizmo.transform.rotation;
         }
 
         public ISet<StoryNode> GetAllNodes()
@@ -110,33 +111,33 @@ namespace Makeover
 
         public bool IsCameraOnGizmo()
         {
-            if (Gizmo == null)
+            if (gizmo == null)
             {
                 return false;
             }
 
             var cameraPosition = CurrentSelectedCamera().transform.position;
-            return Gizmo.transform.position.Equals(cameraPosition);
+            return gizmo.transform.position.Equals(cameraPosition);
         }
 
         public Texture2D StoryBoardTexture()
         {
-            if (Storyboard is null)
+            if (storyboard is null)
             {
                 throw new ApplicationException("Invalid state. Cannot call StoryBoardRect() if no StoryBoard was set");
             }
 
-            return Storyboard.texture;
+            return storyboard.texture;
         }
 
         public Rect StoryBoardRect()
         {
-            if (Storyboard is null)
+            if (storyboard is null)
             {
                 throw new ApplicationException("Invalid state. Cannot call StoryBoardRect() if no StoryBoard was set");
             }
 
-            return Storyboard.rect;
+            return storyboard.rect;
         }
 
         public override object GetValue(NodePort port)
@@ -152,12 +153,12 @@ namespace Makeover
 
         public string GizmoRotationAngle()
         {
-            return Gizmo.transform.rotation.eulerAngles.ToString();
+            return gizmo.transform.rotation.eulerAngles.ToString();
         }
 
         public string GizmoPosition()
         {
-            return Gizmo.transform.position.ToString();
+            return gizmo.transform.position.ToString();
         } 
         public void JumpToGizmo()
         {
@@ -167,13 +168,13 @@ namespace Makeover
                 return;
             }
 
-            if (Gizmo is null)
+            if (gizmo is null)
             {
                 return;
             }
 
-            var transform = Gizmo.transform;
-            Gizmo.JumpToGizmo(camera, transform.position, transform.rotation);
+            var transform = gizmo.transform;
+            gizmo.JumpToGizmo(camera, transform.position, transform.rotation);
         }
 
         public abstract Camera CurrentSelectedCamera();

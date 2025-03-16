@@ -28,17 +28,17 @@ public class BoardNodeEditor : NodeEditor
         EditorUIProvider.DrawExitPort(node.GetOutputPort(nameof(node.Exit)), LabelColor);
 
         node.SetCurrentSelected(EditorUIProvider.DrawCameraReference(node.CurrentSelectedCamera()));
-        node.Gizmo = EditorUIProvider.DrawGizmoReference(node.Gizmo);
+        node.gizmo = EditorUIProvider.DrawGizmoReference(node.gizmo);
 
-        if (node.Gizmo != null)
+        if (node.gizmo != null)
         {
-            node.Gizmo.linkedNode = node;
+            node.gizmo.linkedNode = node;
         }
 
-        node.Storyboard = EditorUIProvider.DrawStoryboardReference(node.Storyboard);
+        node.storyboard = EditorUIProvider.DrawStoryboardReference(node.storyboard);
         Color prev = GUI.backgroundColor;
         GUI.backgroundColor = Color.cyan;
-        if (node.Storyboard != null)
+        if (node.storyboard != null)
         {
             if (GUILayout.Button("Show Image"))
             {
@@ -49,7 +49,7 @@ public class BoardNodeEditor : NodeEditor
         }
 
 
-        if (node.Gizmo != null)
+        if (node.gizmo != null)
         {
             if (GUILayout.Button("Jump to Gizmo"))
             {
@@ -60,13 +60,13 @@ public class BoardNodeEditor : NodeEditor
 
                 var pathToGizmo = node.SearchShortestPathToGizmo();
                 GizmoMovement.MoveGizmoThroughPath(node.CurrentSelectedCamera(), pathToGizmo);
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
             }
 
-            if (GUILayout.Button("Jump to Gizmo without order"))
+            if (GUILayout.Button("Jump to Gizmo Without Order"))
             {
                 if (Application.isPlaying)
                 {
@@ -75,9 +75,9 @@ public class BoardNodeEditor : NodeEditor
 
                 node.JumpToGizmo();
 
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
             }
 

@@ -30,11 +30,11 @@ public class StartStoryNodeEditor : NodeEditor
         EditorUIProvider.DrawExitPort(node.GetOutputPort(nameof(node.Exit)), Color.white);
 
         node.selectedCamera = EditorUIProvider.DrawCameraReference(node.selectedCamera, LabelColor);
-        node.Gizmo = EditorUIProvider.DrawGizmoReference(node.Gizmo, LabelColor);
-        node.Storyboard = EditorUIProvider.DrawStoryboardReference(node.Storyboard, LabelColor);
+        node.gizmo = EditorUIProvider.DrawGizmoReference(node.gizmo, LabelColor);
+        node.storyboard = EditorUIProvider.DrawStoryboardReference(node.storyboard, LabelColor);
         Color prev = GUI.backgroundColor;
         GUI.backgroundColor = Color.red;
-        if (node.Storyboard != null)
+        if (node.storyboard != null)
         {
             if (GUILayout.Button("Show Image"))
             {
@@ -43,13 +43,13 @@ public class StartStoryNodeEditor : NodeEditor
             EditorUIProvider.DrawStoryboardFrame(node);
         }
 
-        if (node.Gizmo != null)
+        if (node.gizmo != null)
         {
-            node.Gizmo.linkedNode = node;
+            node.gizmo.linkedNode = node;
         }
 
         
-        if (node.Gizmo != null)
+        if (node.gizmo != null)
         {
             if (GUILayout.Button("Jump to Gizmo"))
             {
@@ -65,12 +65,12 @@ public class StartStoryNodeEditor : NodeEditor
 
                 var pathToGizmo = node.SearchShortestPathToGizmo();
                 GizmoMovement.MoveGizmoThroughPath(node.CurrentSelectedCamera(), pathToGizmo);
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
             }
-            if (GUILayout.Button("Jump to Gizmo without order"))
+            if (GUILayout.Button("Jump to Gizmo Without Order"))
             {
                 if (Application.isPlaying)
                 {
@@ -79,9 +79,9 @@ public class StartStoryNodeEditor : NodeEditor
 
                 node.JumpToGizmo();
                 
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
             }
 

@@ -33,17 +33,17 @@ public class DecisionNodeEditor : NodeEditor
         GUI.backgroundColor = prev;
 
         node.SetCurrentSelected(EditorUIProvider.DrawCameraReference(node.CurrentSelectedCamera(), LabelColor));
-        node.Gizmo = EditorUIProvider.DrawGizmoReference(node.Gizmo, LabelColor);
+        node.gizmo = EditorUIProvider.DrawGizmoReference(node.gizmo, LabelColor);
 
-        if (node.Gizmo is not null)
+        if (node.gizmo is not null)
         {
-            node.Gizmo.linkedNode = node;
+            node.gizmo.linkedNode = node;
         }
 
-        node.Storyboard = EditorUIProvider.DrawStoryboardReference(node.Storyboard, LabelColor);
+        node.storyboard = EditorUIProvider.DrawStoryboardReference(node.storyboard, LabelColor);
         prev = GUI.backgroundColor;
         GUI.backgroundColor = LabelColor;
-        if (node.Storyboard != null)
+        if (node.storyboard != null)
         {
             if (GUILayout.Button("Show Image"))
             {
@@ -54,7 +54,7 @@ public class DecisionNodeEditor : NodeEditor
 
         
 
-        if (node.Gizmo != null)
+        if (node.gizmo != null)
         {
             if (GUILayout.Button("Jump to Gizmo"))
             {
@@ -65,9 +65,9 @@ public class DecisionNodeEditor : NodeEditor
 
                 var pathToGizmo = node.SearchShortestPathToGizmo();
                 GizmoMovement.MoveGizmoThroughPath(node.CurrentSelectedCamera(), pathToGizmo);
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
 
                 GUI.backgroundColor = prev;
@@ -83,9 +83,9 @@ public class DecisionNodeEditor : NodeEditor
 
                 node.JumpToGizmo();
 
-                if (node.Storyboard is not null)
+                if (node.storyboard is not null)
                 {
-                    StoryboardManagerEditor.UpdateStoryboard(node.Storyboard);
+                    StoryboardManagerEditor.UpdateStoryboard(node.storyboard);
                 }
             }
             EditorUIProvider.DrawGizmoInfo(node.GizmoRotationAngle(), node.GizmoPosition());

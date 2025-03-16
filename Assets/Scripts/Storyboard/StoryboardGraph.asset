@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2456, y: -1944}
+  position: {x: 2424, y: -1928}
   ports:
     keys:
     - Exit
@@ -191,7 +191,6 @@ MonoBehaviour:
     - Exits
     - Exits 0
     - Exits 1
-    - Exits 2
     values:
     - _fieldName: Entry
       _node: {fileID: -4544742637503069104}
@@ -235,15 +234,6 @@ MonoBehaviour:
       - fieldName: Entry
         node: {fileID: 1871828495985210811}
         reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: Exits 2
-      _node: {fileID: -4544742637503069104}
-      _typeQualifiedName: DefaultNamespace.Makeover.IStoryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -351,7 +341,7 @@ MonoBehaviour:
   m_Name: Start Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2248, y: -360}
+  position: {x: -2248, y: -328}
   ports:
     keys:
     - Exit
@@ -419,7 +409,7 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1592, y: -1944}
+  position: {x: 1528, y: -1928}
   ports:
     keys:
     - Exit
@@ -691,7 +681,7 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2024, y: -1944}
+  position: {x: 1976, y: -1928}
   ports:
     keys:
     - Exit
@@ -737,7 +727,7 @@ MonoBehaviour:
   m_Name: Board Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2888, y: -1944}
+  position: {x: 2872, y: -1928}
   ports:
     keys:
     - Exit
