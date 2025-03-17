@@ -30,8 +30,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: ccec1c70564452e4592e67b5a00d286a, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: ccec1c70564452e4592e67b5a00d286a, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 14
 --- !u!114 &-8563155556641207245
 MonoBehaviour:
@@ -76,8 +76,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: a5ddc389e7dae2143b7b14b6f8f29342, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: a5ddc389e7dae2143b7b14b6f8f29342, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 12
 --- !u!114 &-7221224491235613081
 MonoBehaviour:
@@ -122,8 +122,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 545ab79a159c67a45a72739128c7f202, type: 3}
-  Gizmo: {fileID: 4410029880317771988, guid: 4b69906dced34474187efe33ea2e0fa6, type: 3}
+  storyboard: {fileID: 21300000, guid: 545ab79a159c67a45a72739128c7f202, type: 3}
+  gizmo: {fileID: 4410029880317771988, guid: 4b69906dced34474187efe33ea2e0fa6, type: 3}
   nodeName: 6
 --- !u!114 &-6316059530693839962
 MonoBehaviour:
@@ -168,8 +168,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 5c98d87939a2de647959e3ed5cf2f037, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 5c98d87939a2de647959e3ed5cf2f037, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 3
 --- !u!114 &-4544742637503069104
 MonoBehaviour:
@@ -238,8 +238,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  Storyboard: {fileID: 21300000, guid: 19c842982a6d81b4b98432b5a2437c06, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 19c842982a6d81b4b98432b5a2437c06, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 7
 --- !u!114 &-745877988876820768
 MonoBehaviour:
@@ -284,8 +284,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: c2614f23d3d1c07459ec042321cbed10, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: c2614f23d3d1c07459ec042321cbed10, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 5
 --- !u!114 &-701692732289557885
 MonoBehaviour:
@@ -358,8 +358,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: a49740d8bde39354297132fcc61b1947, type: 3}
-  Gizmo: {fileID: 1809670778650320600, guid: 7625dc46decaae14997355183915189b, type: 3}
+  storyboard: {fileID: 21300000, guid: a49740d8bde39354297132fcc61b1947, type: 3}
+  gizmo: {fileID: 0}
   nodeName: StartNode
   selectedCamera: {fileID: 0}
   Players:
@@ -439,8 +439,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 8e4c96c5cb343db43a25795b4d62d90d, type: 3}
-  Gizmo: {fileID: 151177941920450763, guid: 9a5e6d711c2cb014dae528b5956f7cbd, type: 3}
+  storyboard: {fileID: 21300000, guid: 8e4c96c5cb343db43a25795b4d62d90d, type: 3}
+  gizmo: {fileID: 151177941920450763, guid: 9a5e6d711c2cb014dae528b5956f7cbd, type: 3}
   nodeName: 10
 --- !u!114 &1710316300663305724
 MonoBehaviour:
@@ -472,8 +472,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 18d4a67ef8ff38d46bf85a2d62257fb3, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 18d4a67ef8ff38d46bf85a2d62257fb3, type: 3}
+  gizmo: {fileID: 0}
   nodeName: Enter Gizmo Number here
 --- !u!114 &1871828495985210811
 MonoBehaviour:
@@ -518,8 +518,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 568e4f29f80c4cc43bbd84182c7ea15c, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 568e4f29f80c4cc43bbd84182c7ea15c, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 8
 --- !u!114 &2346196282188057126
 MonoBehaviour:
@@ -564,8 +564,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 85bdfa362b7bd1b4491910fac4933731, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 85bdfa362b7bd1b4491910fac4933731, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 2
 --- !u!114 &2726414755973665861
 MonoBehaviour:
@@ -665,8 +665,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 09482bf23b6ee5f48b3dc2289bf7c41c, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 09482bf23b6ee5f48b3dc2289bf7c41c, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 4
 --- !u!114 &5187982816352551068
 MonoBehaviour:
@@ -711,8 +711,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 8945230306b54744e951ee76374068c6, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 8945230306b54744e951ee76374068c6, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 11
 --- !u!114 &6794489018411129300
 MonoBehaviour:
@@ -757,8 +757,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: eac2892048cda684b81180ff11cc2357, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: eac2892048cda684b81180ff11cc2357, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 13
 --- !u!114 &9172723752283657427
 MonoBehaviour:
@@ -803,6 +803,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Storyboard: {fileID: 21300000, guid: 9cc66c5d00ed57543a007f9134cd90dc, type: 3}
-  Gizmo: {fileID: 0}
+  storyboard: {fileID: 21300000, guid: 9cc66c5d00ed57543a007f9134cd90dc, type: 3}
+  gizmo: {fileID: 0}
   nodeName: 1
